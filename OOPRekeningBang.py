@@ -29,10 +29,10 @@ print(tabunganAman.cek_saldo())
 print(tabunganAman.menarik())
 print(tabunganAman.cek_saldo())
 
-pertanyaan = input("Apakah anda masih ingin melakukan transaksi lagi ? (y/n) ")
+pertanyaan = input("Apakah anda masih ingin melanjutkan transaksi ini ? (y/n) ")
 if pertanyaan == 'y':
-    print(tabunganAman.menabung())
-    print(tabunganAman.cek_saldo())
-else:
-    print("Terimakasih telah melakukan transaksi di bank kami")
-    print(tabunganAman.cek_saldo())
+    pertanyaan2 =input("transaksi apa yang ingin anda lakukan ?, silahkan pilih: A ->menabung, B -> ceksaldo C ->menarik"))
+    if pertanyaan2 == 'A':
+        print(tabunganAman.menabung())
+    elif: pertanyaan2 == 'B':
+        print(tabunganAman.cek_saldo())
